@@ -1,0 +1,12 @@
+java.lang.NullPointerException
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:38)
+	at org.apache.zeppelin.spark.Utils.invokeMethod(Utils.java:33)
+
+Solution:
+1. Setup Saprk Home [optional] and HDFS.
+2. Run HDFS service
+3. Restart zeppelin server
+OR
+1. Go to Zeppelin's Interpreter settings.
+2. Select Spark Interpreter
+3. zeppelin.spark.useHiveContext = false
